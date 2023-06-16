@@ -1,0 +1,11 @@
+.form-group {
+    width: 60vw;
+    float: left;
+    display: inline;
+}
+.btn {
+    background-color: red;
+}
+.h2 {
+    font-weight: bolder;
+}

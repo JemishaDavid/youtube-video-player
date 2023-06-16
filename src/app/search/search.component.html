@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="row my-2"><div class="h2 mt-2">MINITUBE</div></div>
+    <div class="form-group search">
+            <input type="text" class="form-control" #query>
+    </div>
+    <button  class="btn btn-primary mx-2" (click)="displayResult(query.value)" > Submit</button>
+
+<div class="row my-2">
+    <div class="col-md-8"> 
+  
+        <article class="blog-post" *ngFor="let item of foundResult"> 
+            <youtube-player [height]="315" [width]="560" [videoId]="item.id.videoId">
+              
+            </youtube-player>
+          <!-- <iframe width="560" height="315" [src]="videoUrl" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+          </iframe> -->
+        
+        </article>
+         
+  
+      </div>
+    </div>
+    </div>
